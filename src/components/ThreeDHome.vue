@@ -149,10 +149,10 @@ const enterprise = {
   founded: '2019',
   lifecycleStage: 'growth',
   loanDemand: {
-    amount: '400万',
+    amount: '450万',
     term: '1年',
     purpose: '流动资金周转',
-    summary: '贷款额度400万，期限1年，用于流动资金周转。'
+    summary: '贷款额度450万，期限1年，用于流动资金周转。'
   },
   scores: {
     team: 89,
@@ -268,7 +268,7 @@ const adviceByProduct = {
   bank_invest_loan: {
     percent: 88,
     reason: '期限1年，与该产品期限适配度高，且企业具备成长潜力。',
-    advice: '建议作为本次400万、1年期流动资金周转需求的重点推荐产品。'
+    advice: '建议作为本次450万、1年期流动资金周转需求的重点推荐产品。'
   },
   equity_incentive_loan: {
     percent: 63,
@@ -287,7 +287,7 @@ const currentProductIndex = ref(0)
 const selectedProductIds = ref(['co_creation_loan', 'bank_invest_loan'])
 
 const lifecycleStage = enterprise.lifecycleStage
-const lifecycleLabel = computed(() => lifecycleMap[lifecycleStage]?.label || '成长期')
+const lifecycleLabel = computed(() => lifecycleMap[lifecycleStage]?.label || '初创期')
 const selectedProducts = computed(() => productCatalog.filter((item) => selectedProductIds.value.includes(item.id)))
 const currentProduct = computed(() => productCatalog[currentProductIndex.value] || productCatalog[0])
 const currentSuggestion = computed(() => {
