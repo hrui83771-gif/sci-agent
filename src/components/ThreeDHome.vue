@@ -147,7 +147,7 @@ const enterprise = {
   industry: '智能制造 / 机器视觉',
   city: '浙江',
   founded: '2019',
-  lifecycleStage: 'growth',
+  lifecycleStage: 'startup',
   loanDemand: {
     amount: '450万',
     term: '1年',
